@@ -1,0 +1,304 @@
+.container-intro{
+   background-image: url(/src/assets/backgound.png);
+   background-repeat: no-repeat;
+   background-size: 100%;
+    height: 30vw;
+    .intro-texto{
+        text-align: center;
+        padding: 13rem 0;
+        h1{
+          font-size: 2rem;
+          color: white;
+          font-family: "Oswald", sans-serif;
+        }
+        button{
+            padding: 0.5rem 5rem 0.5rem;
+            font-size: 1.2rem;
+            background-color: #DB8213;
+            border: 0;
+            font-weight: 800;
+            cursor: pointer;
+            font-family: "Oswald", sans-serif;
+            transition:all 0.5s ease;
+            &:hover{
+                background-color: rgba(255, 255, 255, 0.907);
+                color: #DB8213;
+            }
+        }
+    }
+}
+
+.container-sabores-caseiros{
+    margin: 5rem 6rem 2rem;
+     box-shadow: 0 2px 12px rgba(0,0,0,0.2);
+   h2{
+    color: #DB8213;
+    margin: 1rem;
+    font-family: "Oswald", sans-serif;
+   }
+    .sabores-caseiros{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        background-color: white;
+       
+    .item-home{
+       figure{
+        display: flex;
+        border-bottom: solid rgba(0, 0, 0, 0.056);
+        margin: 0.5rem 0.2rem;
+        cursor: pointer;
+        transition:all 0.5s ease;
+        &:hover{
+            background-color: #cdcdcd7d;
+           
+        }
+
+        figcaption{
+            p{
+                font-weight: 100;
+                font-family: "Source Code Pro", monospace;
+                font-size: 0.8rem;
+            }
+            strong{
+                padding: 1rem 0;
+                font-size: 1.2rem;
+                font-weight: 400;    
+                font-family: "Source Code Pro", monospace;         
+            }
+            h2{
+                color: black;
+                margin: 0;
+                font-weight: 800;
+                font-family: "Source Code Pro", monospace;
+                font-size: 1rem;
+            }
+            display: flex;
+            flex-direction: column;
+        }
+        img{
+            width: 10vw;
+            border-radius: 20px;
+            padding: 0.8rem;
+         }
+       }
+     }
+   } 
+}
+.container-sabores-lanches{
+    margin: 5rem 6rem 2rem;
+     box-shadow: 0 2px 12px rgba(0,0,0,0.2);
+     h2{
+        color: #DB8213;
+        margin: 1rem;
+        font-family: "Oswald", sans-serif;
+       }
+   
+    .sabores-lanches{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        background-color: white;
+       
+    .item-home{
+       figure{
+        display: flex;
+        border-bottom: solid rgba(0, 0, 0, 0.056);
+        margin: 0.5rem 1rem;
+        cursor: pointer;
+        transition:all 0.5s ease;
+        &:hover{
+            background-color: #cdcdcd7d;
+        }
+        figcaption{
+            p{
+                font-weight: 100;
+                font-family: "Source Code Pro", monospace;
+                font-size: 0.8rem;
+            }
+            strong{
+                padding: 1rem 0;
+                font-size: 1.2rem;
+                font-weight: 400;    
+                font-family: "Source Code Pro", monospace;         
+            }
+            h2{
+                color: black;
+                margin: 0;
+                font-weight: 800;
+                font-family: "Source Code Pro", monospace;
+                font-size: 1rem;
+            }
+            display: flex;
+            flex-direction: column;
+        }
+        img{
+            width: 10vw;
+            border-radius: 20px;
+            padding: 0.8rem;
+         }
+       }
+     }
+   } 
+}
+.container-contato{
+    padding:  1rem 2rem 3rem;
+   
+    textarea{
+            padding: 0.5rem;
+            border: 0;
+            box-shadow: 0 12px 20px rgba(0,0,0,0.2);
+            border-radius: 10px;
+            resize: none;
+            margin: 0 0 0.5rem;
+            &:hover{
+                box-shadow: 0 6px 12px #db811348;
+                transition:all 0.9s ease;
+            }
+    }
+    form{
+        display: flex;
+        flex-direction: column;
+        width: 20vw;
+        margin: 0 30rem;
+   
+        
+        legend{
+         color: #DB8213;
+        margin: 1rem;
+        font-family: "Oswald", sans-serif;
+        
+        }
+       
+        input{
+            padding: 0.5rem;
+            border: 0;
+            box-shadow: 0 12px 20px rgba(0,0,0,0.2);
+            border-radius: 30px;
+            margin:  0 0 0.5rem;
+            &:hover{
+                box-shadow: 0 6px 12px #db811348;
+                transition:all 0.9s ease;
+            }
+
+        }
+        input::placeholder{
+            margin: 0;
+            font-family: "Source Code Pro", 
+           
+        }
+        button{
+            padding: 0.5rem 5rem 0.5rem;
+            font-size: 1.2rem;
+            background-color: #DB8213;
+            border: 0;
+            font-weight: 800;
+            cursor: pointer;
+            font-family: "Oswald", sans-serif;
+            transition:all 0.5s ease;
+            &:hover{
+                color: white;
+                background-color: #DB8213;
+            }
+        }
+    }
+}
+@media (max-width:900px){
+    .container-intro{
+        .intro-texto{
+            padding: 7rem 0;
+        }
+    }
+    .container-sabores-caseiros{
+        padding: 0;
+        margin: 0 2rem;
+        
+    }
+    .container-sabores-lanches{
+        padding: 0;
+        margin: 0 2rem;
+    }
+    .container-contato{
+        padding: 1rem 2rem 3rem;
+        form{
+            margin: auto;
+
+            legend{
+                width: 30vw;
+            }
+            input{
+                width: 30vw;
+            }
+            textarea{
+                width: 30vw;
+            }
+            button{
+                width: 30vw;
+            }
+        }
+    }
+}
+@media (max-width:500px){
+    .container-intro{
+     
+       height: auto;
+       background-image: none;
+        .intro-texto{
+            padding: 1rem;
+            h1{
+                color: rgb(0, 0, 0);
+                padding: 1rem;
+            }
+            
+        }
+    }
+    .container-sabores-caseiros{
+        margin: 0 1rem;
+        .sabores-caseiros{
+            display: flex;
+            flex-direction: column;
+
+            .item-home{
+                figure{
+                    img{
+                        width: 30vw;
+                    }
+                }
+            }
+        }
+        
+    }
+    .container-sabores-lanches{
+        margin: 0 1rem;
+        .sabores-lanches{
+            display: flex;
+            flex-direction: column;
+
+            .item-home{
+                figure{
+                    img{
+                        width: 30vw;
+                    }
+                }
+            }
+        }
+    }
+    .container-contato{
+        form{
+           width: auto;
+            legend{
+                width: 100%;
+                font-size: 1.2rem;
+            }
+
+            input{
+                width: 100%;
+                padding: 1.2rem;
+            }
+            textarea{
+                width: 100%;
+            }
+            button{
+                width: 100%;
+            }
+        }
+    }
+}
