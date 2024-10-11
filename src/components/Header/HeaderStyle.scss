@@ -47,6 +47,10 @@ header{
                 display: flex;
                 flex-direction: column;
                 text-align: center;
+                &:hover{
+                    color:  #000000;
+                    cursor: pointer;
+                }
             }
         }
     }
